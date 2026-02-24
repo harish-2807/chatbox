@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: chatbox-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+    region: oregon

@@ -4,6 +4,26 @@ import './App.css';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
+// Fallback API URLs for different environments
+const FALLBACK_API_URLS = {
+  production: 'https://chatbox-backend.onrender.com',
+  development: 'http://localhost:5000'
+};
+
+// Get the correct API URL
+const getApiUrl = () => {
+  if (process.env.REACT_APP_API_URL) {
+    return process.env.REACT_APP_API_URL;
+  }
+  
+  // Check if we're in production
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return FALLBACK_API_URLS.production;
+  }
+  
+  return FALLBACK_API_URLS.development;
+};
+
 function App() {
   const [sessionId, setSessionId] = useState('');
   const [messages, setMessages] = useState([]);
@@ -43,7 +63,7 @@ function App() {
 
   const loadConversation = async (sid) => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/api/conversations/${sid}`);
+      const response = await axios.get(`${getApiUrl()}/api/conversations/${sid}`);
       setMessages(response.data.messages || []);
     } catch (err) {
       console.error('Failed to load conversation:', err);
@@ -81,7 +101,7 @@ function App() {
     setMessages(prev => [...prev, userMsgObj]);
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/chat`, {
+      const response = await axios.post(`${getApiUrl()}/api/chat`, {
         sessionId: sessionId,
         message: userMessage
       });
@@ -129,7 +149,7 @@ function App() {
       setInputMessage('');
 
       try {
-        const response = await axios.post(`${API_BASE_URL}/api/chat`, {
+        const response = await axios.post(`${getApiUrl()}/api/chat`, {
           sessionId: sessionId,
           message: question
         });

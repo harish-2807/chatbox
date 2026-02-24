@@ -6,9 +6,14 @@
   NODE_VERSION = "18"
 
 [[redirects]]
+  from = "/api/*"
+  to = "https://your-backend-url.com/api/:splat"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
 [context.production.environment]
-  REACT_APP_API_URL = "https://your-backend-url.com"
+  REACT_APP_API_URL = "https://chatbox-backend.onrender.com"
