@@ -6,6 +6,12 @@ A full-stack AI-powered support assistant built with React.js, Node.js, SQLite, 
 
 **GitHub Pages:** https://harish-2807.github.io/chatbox/
 
+## 📂 Repository
+
+**Main Repository:** https://github.com/harish-2807/harishAI.git
+
+**Previous Repository:** https://github.com/harish-2807/chatbox.git
+
 ## Features
 
 - 🤖 AI-powered responses based on product documentation
