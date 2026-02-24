@@ -2,6 +2,10 @@
 
 A full-stack AI-powered support assistant built with React.js, Node.js, SQLite, and OpenAI.
 
+## 🌐 Live Demo
+
+**GitHub Pages:** https://harish-2807.github.io/chatbox/
+
 ## Features
 
 - 🤖 AI-powered responses based on product documentation
@@ -10,7 +14,9 @@ A full-stack AI-powered support assistant built with React.js, Node.js, SQLite, 
 - 🗄️ SQLite database for storing conversations
 - 🔄 Context-aware responses (last 5 message pairs)
 - 🛡️ Rate limiting and error handling
-- 📱 Responsive design
+- 📱 Fully responsive design for all devices
+- 🎨 Modern UI with animations and stickers
+- 💡 Suggested questions for quick help
 
 ## Tech Stack
 
