@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Reset Password",
+    "content": "Users can reset password from Settings > Security."
+  },
+  {
+    "title": "Refund Policy",
+    "content": "Refunds are allowed within 7 days of purchase."
+  },
+  {
+    "title": "Account Creation",
+    "content": "New users can create an account by clicking the Sign Up button and providing email and password."
+  },
+  {
+    "title": "Payment Methods",
+    "content": "We accept credit cards, debit cards, and PayPal for payments."
+  },
+  {
+    "title": "Shipping Information",
+    "content": "Standard shipping takes 5-7 business days. Express shipping takes 2-3 business days."
+  },
+  {
+    "title": "Customer Support Hours",
+    "content": "Our customer support team is available Monday through Friday, 9 AM to 6 PM EST."
+  },
+  {
+    "title": "Product Warranty",
+    "content": "All products come with a 1-year manufacturer warranty covering defects and malfunctions."
+  },
+  {
+    "title": "Return Policy",
+    "content": "Items can be returned within 30 days of purchase in original condition with receipt."
+  },
+  {
+    "title": "Account Deletion",
+    "content": "Users can delete their account from Settings > Privacy > Delete Account."
+  },
+  {
+    "title": "Technical Support",
+    "content": "For technical issues, email support@example.com or use the live chat feature."
+  }
+]
