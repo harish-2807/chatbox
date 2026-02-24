@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Support Assistant - Demo</title>
+    <meta name="description" content="AI-powered Support Assistant with React and Node.js" />
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .container {
+        text-align: center;
+        max-width: 600px;
+        padding: 40px 20px;
+      }
+      .logo {
+        font-size: 80px;
+        margin-bottom: 20px;
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      h1 {
+        margin: 0 0 20px 0;
+        font-size: 36px;
+        font-weight: 600;
+      }
+      .description {
+        margin: 0 0 30px 0;
+        font-size: 18px;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+      .features {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 30px;
+        margin: 20px 0;
+        backdrop-filter: blur(10px);
+      }
+      .feature-list {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .feature-list li {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      .demo-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+        margin: 20px 10px 0 10px;
+      }
+      .demo-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      }
+      .github-link {
+        color: white;
+        text-decoration: none;
+        opacity: 0.8;
+        font-size: 14px;
+      }
+      .github-link:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">🤖</div>
+      <h1>AI Support Assistant</h1>
+      <p class="description">
+        A modern, responsive AI-powered support assistant built with React.js, Node.js, and SQLite.
+        Features real-time chat, session management, and intelligent responses.
+      </p>
+      
+      <div class="features">
+        <ul class="feature-list">
+          <li>🚀 Real-time AI chat interface</li>
+          <li>📱 Fully responsive design</li>
+          <li>💾 Session-based conversation storage</li>
+          <li>🎯 Suggested questions for quick help</li>
+          <li>🛡️ Rate limiting and error handling</li>
+          <li>🎨 Modern UI with animations</li>
+        </ul>
+      </div>
+      
+      <div>
+        <a href="https://github.com/harish-2807/chatbox" class="demo-btn" target="_blank">
+          📂 View Source Code
+        </a>
+        <a href="#" class="demo-btn" onclick="alert('Demo app is coming soon! Check the source code for setup instructions.')">
+          🚀 Live Demo
+        </a>
+      </div>
+      
+      <p style="margin-top: 40px;">
+        <a href="https://github.com/harish-2807/chatbox" class="github-link" target="_blank">
+          ⭐ Star on GitHub
+        </a>
+      </p>
+    </div>
+  </body>
+</html>
